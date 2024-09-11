@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #02A28F;
+    & h1{
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+        padding: 1rem;
+        font-weight: 700;
+        color: white;
+    }
+}
+main{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Part1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 95%;
+}
+.Part2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 95%;
+}
+.card{
+    overflow: hidden;
+    position: relative;
+    & img{
+     width: 100%;
+     height: 50vh;
+     object-fit:initial;
+     border-radius: 10px;
+    }
+ }
+.card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+.text{
+    padding: 10px;
+    color: white;
+    position: absolute;
+    margin-top: 37vh;
+    z-index: 2;
+    & h1{
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    & h4{
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+}
+.cabecalho{
+    width: 100%;
+    height: 2.5rem;
+    background-color: #02A28F;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    & h1{
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1rem;
+    }
+    & h4{
+        font-weight: 500;
+        font-size: 0.9rem;
+        line-height: 1rem;
+        text-decoration: underline;
+    }
+}
+    #cabecalho-novo{
+        width: 100%;
+        height: 2.5rem;
+        background-color: #02A28F;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+        & h1{
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1rem;
+        }
+        & h4{
+            font-weight: 500;
+            font-size: 0.9rem;
+            line-height: 1rem;
+            text-decoration: underline;
+}
+
+}
+#postrecente{
+    display: grid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.grid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.Post-Card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    & img{
+        width: 100%
+    }
+    & div{
+    margin-left: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+        & h5{
+            color: #02A28F;
+            font-weight: 400;
+            font-size: 0.8rem;
+            line-height: 0.8rem
+        }
+        & h2{
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    & h3{
+        font-weight: 500;
+        font-size: 0.7rem;
+        line-height: 0.7rem;
+        color: #616161;
+    }
+    p{
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+    }
+}
+}
+.Card-popular{
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    width: auto;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    & .container{
+        padding: 0.8em;
+        display: flex;
+        .populartext{
+            display: flex;
+            flex-direction: column;
+            margin-top: 0.5em;
+            margin-left: 0.5em;
+            gap: 0.5em;
+        }
+        h3{
+            font-weight: 700;
+            font-size: 0.9em;
+            line-height: 1em;
+        }
+        h4{
+            font-weight: 500;
+            font-size: 0.7em;
+            line-height: 0.7em;
+            color: #616161;
+        }
+    }
+}
+#categorias{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+
+}
+.cate{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #616161;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1rem;
+}
+footer{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #02A28F;
+    & h1{
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: 1rem;
+        font-weight: 700;
+        color: white;
+    }
+}
+
+@media (min-width: 500px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .Part1{
+        width: 80%;
+    }
+    .Part2{
+        width: 80%;
+    }
+    .text{
+        margin-top: 40vh;
+    }
+}
+
+@media (min-width: 900px){
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+    }
+    .Part1{
+        width: 55%;
+        margin-right: 0.4rem;
+    }
+    .Part2{
+        width: 35%;
+        margin-left: 0.4rem;
+    }
+    #postpopulares{
+        height: 50.4vh;
+    }
+}
+
+@media (min-width: 1200px){
+    .Part1{
+        width: 46%;
+        margin-right: 0.4rem;
+    }
+    .Part2{
+        width: 24%;
+        margin-left: 0.4rem;
+    }
+    .cabecalho{
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+    header{
+        justify-content: flex-start;
+        padding-left: 14%;
+    }
+}
